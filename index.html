@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f2db331ca8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gall webSite</title>
+  </head>
+  <body>
+    <section class="sect-1">
+      <nav>
+        <a href="index.html">
+          <img src="logo-solid.svg" class="logo-img" alt=""/>
+        </a>
+        <div class="menu" id="menu">
+          <li>ABOUT</li>
+          <li>WORK</li>
+          <li>CONTACT</li>
+        </div>
+        <!-- <i class="fa-solid fa-bars" id="menuBtn"></i> -->
+        <img src="bars-solid.svg" class="fa-solid fa-bars" id="menuBtn" alt="">
+      </nav>
+
+      <div class="sect-1-content">
+        <h1>your GROWTH our WORK.</h1>
+        <img src="arrow.svg" class="arrow" alt="" />
+      </div>
+    </section>
+    <script>
+      const menuBtn= document.getElementById("menuBtn");
+      const menu=document.getElementById("menu");
+
+      let desplegarMenu= function(){
+        menu.classList.toggle("menu-toggle")
+      }
+
+      menuBtn.addEventListener("click", desplegarMenu)
+    </script>
+
+    <section class="sect-2">
+      <div class="sect-2-title"><span class="spanTitle">about</span></div>
+      <div class="sect-2-content">
+        <p>
+          Somos <span>Gall.DSGN</span> tu socio de crecimiento. Te impulsamos a
+          que alcances tus objeticos o a detectarlos.
+        </p>
+        <h3>Nuestra metodología consiste en fusionar:</h3>
+        <p>
+          Marketing tradicional, aplicado al universo de las redes socuales y el
+          E-commerce<span class="plus"> + </span>Diseño, utilizamos el diseño de
+          manera estratégica para reafirmar la identidad y los valores de tu
+          marca.
+        </p>
+        <h3>Con estos pilares creamos una metodología capaz de:</h3>
+        <p>
+          Aumentar el tráfico, aumentando el porcentaje de monetizacion de
+          leads, distincion de marca dentro de tu nicho.
+        </p>
+      </div>
+      <div class="sect2-subtitles">
+        <h1>Creative & Strategic Partner</h1>
+        <h2>BASED IN BUENOS AIRES // AVIABLE WORLDWIDE</h2>
+      </div>
+    </section>
+
+    <section class="sect-3">
+      <div class="sect-3-graph">
+        <img src="eq-tall-bg.svg" alt="" />
+        <span>Work with us</span>
+        <div class="vertical-line"></div>
+        <img src="eq-med-bgc.svg" alt="" />
+        <span>Know about us</span>
+        <div class="vertical-line"></div>
+        <img src="eq-short-bgc.svg" alt="" />
+        <span>Without us</span>
+      </div>
+      <div class="sect-3-info">
+        <img src="arrow.svg" alt="" />
+        <img src="eq-tall.svg" alt="" />
+        <p>Autoridad/Posicionamiento</p>
+        <p>Diseño estratégico</p>
+        <p>Sistema de conversión de tráfico</p>
+        <p>Oferta de adquisición</p>
+        <p>Contenido de alto valor <span class="plus"> + </span>UGC</p>
+        <p>Captación de tráfico</p>
+        <p>Funnels de conversión</p>
+      </div>
+      <div class="sect-3-title">
+        <div class="vertical-line-short"></div>
+        <h3>your GROWTH our WORK.</h3>
+      </div>
+    </section>
+
+    <section class="sect-4">
+      <div class="sect-4-email-box">
+        <p>Si queres trabajar con nosotros contactanos.</p>
+        <input type="email" name="" id="" placeholder="Contact" />
+      </div>
+      <div class="sect-4-social-box">
+        <img src="logo-in.svg" alt="" />
+        <img src="logo-instagram.svg" alt="" />
+        <img src="logo- Be.svg" alt="" />
+      </div>
+      <div class="sect-4-title">
+        <h1>Creative & Srategic Partner</h1>
+      </div>
+    </section>
+  </body>
+</html>
