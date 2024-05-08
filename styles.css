@@ -93,7 +93,7 @@ span {
 }
 /* ______SECTION 1________ */
 section {
-  height: calc(var(--vh));
+  height: calc(var(--vh))*100;
   color: white;
 }
 .sect-1 {
@@ -112,8 +112,8 @@ section {
   width: 25vw;
 }
 .fa-bars {
-  transform: scale(2,2);
-  color: white;
+height: 70%;
+filter: var(--whiteFilter);
 }
 nav {
   grid-area: nav;
