@@ -106,24 +106,24 @@
       </div>
     </section>
     
-    <script>
-      let vh = window.innerHeight*0.01;
+    <!-- <script>
+      let vh = window.innerHeight;
         document.documentElement.style.setProperty('--vh', `${vh}px`)
       window.addEventListener('resize', ()=>{
-        let vh = window.innerHeight*0.01;
+        let vh = window.innerHeight;
         document.documentElement.style.setProperty('--vh', `${vh}px`)
         console.log(vh)
       })
-    </script>
+    </script> -->
 
-    <!-- <script>
+    <script>
       let sectHeight1= function(){
         let vh = window.innerHeight;
         document.documentElement.style.setProperty("--vh", `${vh}px`);
         console.log(vh)
       }
-      document.addEventListener('load', sectHeight1)
-    </script> -->
+      document.addEventListener('DOMContentLoaded', sectHeight1)
+    </script>
 
     <script>
       const menuBtn = document.getElementById("menuBtn");
