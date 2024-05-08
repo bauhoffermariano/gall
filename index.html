@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimal-ui"
+    />
     <script
       src="https://kit.fontawesome.com/f2db331ca8.js"
       crossorigin="anonymous"
@@ -14,33 +17,27 @@
     <section class="sect-1">
       <nav>
         <a href="index.html">
-          <img src="logo-solid.svg" class="logo-img" alt=""/>
+          <img src="logo-solid.svg" class="logo-img" alt="" />
         </a>
         <div class="menu" id="menu">
           <li>ABOUT</li>
           <li>WORK</li>
           <li>CONTACT</li>
         </div>
-        <!-- <i class="fa-solid fa-bars" id="menuBtn"></i> -->
-        <img src="bars-solid.svg" class="fa-solid fa-bars" id="menuBtn" alt="">
+        <img
+          src="bars-solid.svg"
+          class="fa-solid fa-bars"
+          id="menuBtn"
+          alt=""
+        />
       </nav>
 
       <div class="sect-1-content">
-        <h1>your GROWTH our WORK.</h1>
-        <img src="arrow.svg" class="arrow" alt="" />
+        <h1>your GROWTH our</h1>
+        <h1>WORK.</h1>
       </div>
+      <img src="arrow.svg" class="arrow" alt="" />
     </section>
-    <script>
-      const menuBtn= document.getElementById("menuBtn");
-      const menu=document.getElementById("menu");
-
-      let desplegarMenu= function(){
-        menu.classList.toggle("menu-toggle")
-      }
-
-      menuBtn.addEventListener("click", desplegarMenu)
-    </script>
-
     <section class="sect-2">
       <div class="sect-2-title"><span class="spanTitle">about</span></div>
       <div class="sect-2-content">
@@ -62,7 +59,7 @@
         </p>
       </div>
       <div class="sect2-subtitles">
-        <h1>Creative & Strategic Partner</h1>
+        <h2>Creative & Strategic Partner</h2>
         <h2>BASED IN BUENOS AIRES // AVIABLE WORLDWIDE</h2>
       </div>
     </section>
@@ -109,5 +106,25 @@
         <h1>Creative & Srategic Partner</h1>
       </div>
     </section>
+
+    <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+      window.addEventListener("resize", () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+        console.log(vh);
+      });
+    </script>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menu = document.getElementById("menu");
+
+      let desplegarMenu = function () {
+        menu.classList.toggle("menu-toggle");
+      };
+
+      menuBtn.addEventListener("click", desplegarMenu);
+    </script>
   </body>
 </html>
