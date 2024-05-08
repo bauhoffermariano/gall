@@ -77,7 +77,7 @@ section {
 }
 .sect-1 {
   width: 100vw;
-  background-image: url(stair.svg), url(bcg-img-vertical-1.png);
+  background-image: url(stair.svg), url(bcg-img-vertical-2.png);
   background-position: bottom right, top left;
   background-repeat: no-repeat, no-repeat;
   background-size: 80vw, cover;
