@@ -110,8 +110,8 @@
       function ajustarAltura(){
         let alturaVentana = window.screen.height;
         let section1= document.getElementById("sect-1");
-        section1.style.height=alturaVentana;
-        console.log(alturaVentana)
+        section1.style.height=alturaVentana+("px");
+        console.log(alturaVentana+("px"))
       }
       window.addEventListener('load', ajustarAltura)
     </script>
