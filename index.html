@@ -108,7 +108,7 @@
 
     <script>
       let sectHeight1= function(){
-        let vh = window.innerHeight* 0.01;
+        let vh = window.innerHeight;
         document.documentElement.style.setProperty("--vh", `${vh}px`);
         console.log(vh)
 
@@ -116,15 +116,7 @@
 
       document.addEventListener('load', sectHeight1)
     </script>
-    <!-- <script>
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-      doc.addEventListener("resize", () => {
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty("--vh", `${vh}px`);
-        console.log(vh);
-      }); -->
-    </script>
+
     <script>
       const menuBtn = document.getElementById("menuBtn");
       const menu = document.getElementById("menu");
