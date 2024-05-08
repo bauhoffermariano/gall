@@ -8,7 +8,7 @@
     brightness(115%) contrast(84%);
   --greenFilter: invert(54%) sepia(16%) saturate(902%) hue-rotate(68deg)
     brightness(96%) contrast(89%);
-    --vh:100vh;
+    --vh:0;
 }
 
 html {
@@ -93,7 +93,7 @@ span {
 }
 /* ______SECTION 1________ */
 section {
-  height: calc(var(--vh)*100);
+  height: (var(--vh));
   color: white;
 }
 .sect-1 {
