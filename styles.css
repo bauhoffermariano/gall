@@ -129,13 +129,26 @@ nav:hover{
 }
 .menu {
   position: absolute;
-  top: 12vh;
-  transform: translateX(-1000px);
-  transition: all 0.5s ease;
+  top: 15%;
+  right: 0;
+  transform: translateX(1000px);
+  transition: all 0.3s ease;
   list-style: none;
 }
 .menu-toggle {
   transform: translateX(0px);
+}
+li{
+  text-align: center;
+  padding: .5rem;
+  background-color:  #1312123b;
+  width: 50vw;
+}
+li:hover{
+  background-color: #5a575773;
+}
+.liborder{
+  border-radius: 0 0 0 1rem;
 }
 .sect-1-content {
   grid-area: conten;
