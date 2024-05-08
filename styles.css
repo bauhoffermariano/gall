@@ -12,7 +12,7 @@
 }
 
 html {
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 * {
@@ -93,18 +93,18 @@ span {
 }
 /* ______SECTION 1________ */
 section {
+  width: 100vw;
   height: 100vh;
   color: white;
 }
 .sect-1 {
-  width: 100vw;
   background-image:url(stair.svg), url(logo-85transparent.png), url(bcg-img-vertical-1.png);
   background-repeat:no-repeat,no-repeat, no-repeat;
   background-size: 80vw, 30vh, cover;
   background-position:bottom right, 50% 40% , center ;
   display: grid; 
   grid-template-rows: 15vh 75vh 10vh;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20vw 80vw;
   grid-template-areas: "nav nav" "conten conten" "arrow arrownone";
 }
 .logo-img {
