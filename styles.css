@@ -93,21 +93,22 @@ span {
 }
 /* ______SECTION 1________ */
 section {
-  height: calc(var(--vh))*100;
+  height: calc(var(--vh));
   color: white;
 }
 .sect-1 {
   width: 100vw;
-  background-image:url(stair.svg), url(bcg-img-vertical-1.png);
-  background-repeat:no-repeat, no-repeat;
-  background-size: 80vw, cover;
-  background-position:bottom right,center ;
-  display: grid;
+  background-image:url(stair.svg), url(logo-85transparent.png), url(bcg-img-vertical-1.png);
+  background-repeat:no-repeat,no-repeat, no-repeat;
+  background-size: 80vw, 30vh, cover;
+  background-position:bottom right, 50% 40% , center ;
+  display: grid; 
   grid-template-rows: 15% 75% 10%;
   grid-template-columns: 20% 80%;
   grid-template-areas: "nav nav" "conten conten" "arrow arrownone";
 }
 .logo-img {
+  display: none;
   height: 100%;
   width: 25vw;
 }
@@ -118,15 +119,18 @@ filter: var(--whiteFilter);
 nav {
   grid-area: nav;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 12% 1rem 6%;
+  padding: 1rem;
   background-color: #1312123b;
+}
+nav:hover{
+  background-color: #5a575773;
 }
 .menu {
   position: absolute;
   top: 12vh;
-  transform: translateX(-300px);
+  transform: translateX(-1000px);
   transition: all 0.5s ease;
   list-style: none;
 }
@@ -135,11 +139,14 @@ nav {
 }
 .sect-1-content {
   grid-area: conten;
-  margin: 0 5vw 5rem 1rem;
+  margin: 0 0 0 1rem;
   align-self: center;
 }
+.titleMovFirst{
+  line-height: 15vh;
+}
 .titleMovSecond{
-  line-height: 1.5rem;
+  line-height: 3vh;
 }
 .arrow {
   grid-area: arrow;
