@@ -93,7 +93,7 @@ span {
 }
 /* ______SECTION 1________ */
 section {
-  height: calc(var(--vh));
+  height: calc(var(--vh))*100;
   color: white;
 }
 .sect-1 {
