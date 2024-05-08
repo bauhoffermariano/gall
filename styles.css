@@ -103,7 +103,7 @@ section {
   background-size: 80vw, 30vh, cover;
   background-position:bottom right, 50% 40% , center ;
   display: grid; 
-  grid-template-rows: 15% 75% 10%;
+  grid-template-rows: 15vh 75vh 10vh;
   grid-template-columns: 20% 80%;
   grid-template-areas: "nav nav" "conten conten" "arrow arrownone";
 }
@@ -129,7 +129,7 @@ nav:hover{
 }
 .menu {
   position: absolute;
-  top: 15%;
+  top: 15vh;
   right: 0;
   transform: translateX(1000px);
   transition: all 0.3s ease;
