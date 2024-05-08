@@ -14,7 +14,7 @@
     <title>Gall webSite</title>
   </head>
   <body>
-    <section class="sect-1">
+    <section class="sect-1" id="sect-1">
       <nav id="menuBtn">
         <a href="index.html">
           <img src="logo-solid.svg" class="logo-img" alt="" />
@@ -106,6 +106,15 @@
       </div>
     </section>
     
+    <script>
+      function ajustarAltura(){
+        let alturaVentana = window.screen.height;
+        let section1= document.getElementById("sect-1");
+        section1.style.height=alturaVentana;
+        console.log(alturaVentana)
+      }
+      window.addEventListener('load', ajustarAltura)
+    </script>
 
 
     <script>
