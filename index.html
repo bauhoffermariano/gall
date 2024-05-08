@@ -6,10 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimal-ui"
     />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/f2db331ca8.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <link rel="stylesheet" href="styles.css" />
     <title>Gall webSite</title>
   </head>
@@ -24,7 +24,8 @@
           <li>WORK</li>
           <li>CONTACT</li>
         </div>
-        <i class="fa-solid fa-bars"></i>
+        <img src="bars-solid.svg" class="fa-solid fa-bars" alt="">
+        <!-- <i class="fa-solid fa-bars"></i> -->
       </nav>
 
       <div class="sect-1-content">
@@ -107,7 +108,7 @@
 
     <script>
       let sectHeight1= function(){
-        let vh = window.innerHeight;
+        let vh = window.innerHeight* 0.01;
         document.documentElement.style.setProperty("--vh", `${vh}px`);
         console.log(vh)
 
