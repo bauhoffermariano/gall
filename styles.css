@@ -1,5 +1,3 @@
-/* medidas:
- */
 :root {
   --redFilter: invert(19%) sepia(50%) saturate(4915%) hue-rotate(348deg)
     brightness(86%) contrast(97%);
@@ -10,170 +8,153 @@
     brightness(96%) contrast(89%);
     /* --vh:; */
 }
-
-html {
-  width: 100%;
-  overflow: hidden;
-}
 * {
-  box-sizing: border-box;
-}
-body {
-  height: 100%;
-  position: fixed;
-overflow-y: scroll;
--webkit-overflow-scrolling: touch;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  /* font-size: clamp(.5rem, 0.5370rem + 2.4691vw, 3.5rem); */
-}
-/* ______PRUEBA CLAMP ()______*/
-@keyframes movFirst {
-  0% {
-    transform: translateX(-500px);
+    box-sizing: border-box;
+    /* position: relative; */
+    overflow-x: hidden;
   }
-  30% {
-    transform: translateX(0px);
+ 
+  body {
+    max-width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #302a55;
+    color: white;
   }
-}
-@keyframes movSecond {
-  0% {
-    transform: translateX(1000px);
+  /*_____ANIMATIONS______*/
+  @keyframes movFirst {
+    0% {
+      transform: translateX(-500px);
+    }
+    30% {
+      transform: translateX(0px);
+    }
   }
-  60%{
-    transform: translateX(700px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-  /* 80% {
-    transform: translateX(0px);
-  }
-  83% {
-    transform: translateX(4px);
-  }
-  86% {
-    transform: translateX(0px);
-  }
-  89% {
-    transform: translateX(-3px);
-  }
-  93% {
-    transform: translateX(0px);
-  }
-  96% {
-    transform: translateX(1px);
-  }
-  99% {
-    transform: translateX(0px);
-  } */
-}
-h1 {
-  margin: 0;
-  font-size: clamp(1.5rem, 1.64rem + 4vw, 6rem);
-}
-.titleMovSecond,
-.titleMovFirst {
-  animation-name: movSecond;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-fill-mode: backwards;
-  animation-iteration-count: 1;
-}
-.titleMovFirst {
-  animation-name: movFirst;
-  animation-duration: 2s;
-}
-h2 {
-  font-size: clamp(1.2rem, 0.64rem + 2.8vw, 4rem);
-}
-h3 {
-  font-size: clamp(0.9rem, 0.34rem + 2.8vw, 3.7rem);
-}
-p,
-span {
-  font-size: clamp(0.7rem, 0.14rem + 2.8vw, 3.5rem);
-}
-/* ______SECTION 1________ */
-section {
-  width: 100vw;
-  height: 100vh;
-  color: white;
-}
-.sect-1 {
-  background-image:url(stair.svg), url(logo-85transparent.png), url(bcg-img-vertical-1.png);
-  background-repeat:no-repeat,no-repeat, no-repeat;
-  background-size: 80vw, 30vh, cover;
-  background-position:bottom right, 50% 40% , center ;
-  display: grid; 
-  grid-template-rows: 15vh 75vh 10vh;
-  grid-template-columns: 20vw 80vw;
-  grid-template-areas: "nav nav" "conten conten" "arrow arrownone";
-}
-.logo-img {
-  display: none;
-  height: 100%;
-  width: 25vw;
-}
-.fa-bars {
-height: 70%;
-filter: var(--whiteFilter);
-}
-nav {
-  grid-area: nav;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: #1312123b;
-}
-nav:hover{
-  background-color: #5a575773;
-}
-.menu {
-  position: absolute;
-  top: 15vh;
-  right: 0;
-  transform: translateX(1000px);
-  transition: all 0.3s ease;
-  list-style: none;
-}
-.menu-toggle {
-  transform: translateX(0px);
-}
-li{
-  text-align: center;
-  padding: .5rem;
-  background-color:  #1312123b;
-  width: 50vw;
-}
-li:hover{
-  background-color: #5a575773;
-}
-.liborder{
-  border-radius: 0 0 0 1rem;
-}
-.sect-1-content {
-  grid-area: conten;
-  margin: 0 0 0 1rem;
-  align-self: center;
-}
-.titleMovFirst{
-  line-height: 15vh;
-}
-.titleMovSecond{
-  line-height: 3vh;
-}
-.arrow {
-  grid-area: arrow;
-  height: 70%;
-  width: 50%;
-  align-self: center;
-  justify-self: center;
-}
-/*___SECTION 2_______*/
-.sect-2{
-  background-color: black;
-}
+  @keyframes movSecond {
+    0% {
+      transform: translateX(1000px);
+    }
+    60%{
+      transform: translateX(700px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
 
+  }
+  @keyframes menuDesplegable{
+    0%{
+      height: 0%;
+    }
+    100%{
+      height: 100px;
+    }
+  }
+  /*_____DYNAMIC FONT_____*/
+  h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 1.8rem + 4vw, 6rem);
+  }
+  h2 {
+    font-size: clamp(1.2rem, 0.64rem + 2.8vw, 4rem);
+  }
+  h3 {
+    font-size: clamp(0.9rem, 0.34rem + 2.8vw, 3.7rem);
+  }
+  p,
+  span{
+    font-size: clamp(0.7rem, 0.14rem + 2.8vw, 3.5rem);
+  }
+
+  /*_______SECTIONS______*/
+  section{
+    /* height: 100lvh; */
+    /* overflow-y: hidden; */
+  }
+  /*_______SECTION 1_____*/
+
+
+  .sect-1 {
+    background-image:url(stair.svg), url(logo-85transparent.png), url(bcg-img-vertical-1.png);
+    background-repeat:no-repeat,no-repeat, no-repeat;
+    background-size: 80vw, 30vh, cover;
+    background-position:bottom right, 50% 40% , center ;
+    display: grid; 
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 20vw 80vw;
+    grid-template-areas: "nav nav" "conten conten" "arrow arrownone";
+  }
+  .logo-img{
+    display: none;
+    height: 100%;
+  }
+  nav{
+    /* position: relative; */
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #26244d62;
+  }
+  .menu{ 
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #26244d62;
+    text-align: center;
+  }
+  .menu-toggle{
+    animation-name: menuDesplegable;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+  }
+  a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+  }
+  li{
+    margin: .5rem 0;
+  }
+  li:hover{
+    background-color: #3b3a5762;
+  }
+  .sect-1-content{
+    grid-area: conten;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40% 0 60% 1rem;
+  }
+  .titleMovSecond,
+  .titleMovFirst {
+    animation-name: movSecond;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+  }
+  .titleMovFirst {
+    animation-name: movFirst;
+    animation-duration: 2s;
+  }
+  .titleMovSecond{
+    overflow-y: hidden;
+    line-height: 2.6rem;
+  }
+  .arrow{
+    grid-area: arrow;
+    height: 60%;
+    align-self: center;
+    justify-self: center;
+  }
+  .fa-bars{
+    height: 70%;
+    filter: var(--whiteFilter);
+  }
