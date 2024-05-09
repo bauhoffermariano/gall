@@ -75,6 +75,7 @@
 
 
   .sect-1 {
+    height: 100svh;
     background-image:url(stair.svg), url(logo-85transparent.png), url(bcg-img-vertical-1.png);
     background-repeat:no-repeat,no-repeat, no-repeat;
     background-size: 80vw, 30vh, cover;
